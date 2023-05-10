@@ -12,6 +12,8 @@ public class MovieService implements IMovieService {
 	public void setMovieDao(IMovieDao movieDao) {
 		this.movieDao = movieDao;
 	}
+	
+	
 
 	public List<Movie> getAllMovies() {
 		   
@@ -25,8 +27,24 @@ public class MovieService implements IMovieService {
          
 	}
 
-	public void postOneMovie(Movie movie) {
-		// TODO Auto-generated method stub
+	public void addNewMovie(Movie movie) {
+		
+		movieDao.insertNewMovie(movie);
+		
+	}
+
+
+
+	public void updateMovieById(String id, Movie movie) {
+		
+		movieDao.updateMovieById(id, movie);
+		
+	}
+
+
+
+	public void deleteMovieById(String id) {
+		movieDao.deleteMovieById(id);
 		
 	}
 

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>Post Success</h1>
+<h1>Movie Added successfully!</h1>
 
 </body>
 </html>

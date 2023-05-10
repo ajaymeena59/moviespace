@@ -11,8 +11,8 @@
         <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" name="ds" >
            <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
            <property name="url" value="jdbc:mysql://localhost:3306/movie_space" />
-           <property name="username" value="yourDbUsername" />
-           <property name="password" value="yourDbPassword" />
+           <property name="username" value="yourdbusername" />
+           <property name="password" value="yourdbpassword" />
         </bean>
         
         <bean class="org.springframework.jdbc.core.JdbcTemplate" name="jdbcTemplate"  >
